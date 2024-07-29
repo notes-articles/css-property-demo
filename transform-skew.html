@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform-skew</title>
+    <style>
+        .outer {
+            width: 200px;
+            aspect-ratio: 1/1;
+            border: 1px solid gray;
+            margin: 100px auto;
+        }
+
+        .inner {
+            width: 200px;
+            height: 200px;
+            background-color: dodgerblue;
+            /* transform: skewX(30deg); */
+            /* transform: skewY(30deg); */
+            /* 后面的会覆盖前面的，如果想同时扭曲 X Y ,这样写 */
+            transform: skewX(30deg) skewY(30deg)
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+</body>
+</html>

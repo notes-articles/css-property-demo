@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hyphenate-limit-chars</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        }
+
+        p {
+            margin: 1rem;
+            width: 120px;
+            border: 2px dashed #999;
+            font-size: 1.5rem;
+            /* 启用断词 */
+            hyphens: auto;
+        }
+
+        #ex2 {
+            /* 超过 14 个字符 开始断词 */
+            hyphenate-limit-chars: 14;
+        }
+
+        #ex3 {
+            /* 超过 5 个字符 开始断词
+               连接词前面至少 9 个字符
+               连接词后面至少 2 个字符
+            */
+            hyphenate-limit-chars: 5 9 2;
+        }
+
+        #ex4 {
+            /* 超过 5 个字符 开始断词
+               连接词前面至少 2 个字符
+               连接词后面至少 7 个字符
+            */
+            hyphenate-limit-chars: 5 2 7;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p id="ex1">juxtaposition and acknowledgement</p>
+        <p id="ex2">juxtaposition and acknowledgement</p>
+        <p id="ex3">juxtaposition and acknowledgement</p>
+        <p id="ex4">juxtaposition and acknowledgement</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-template-columns_fit-content</title>
+
+    <style>
+        #container {
+            display: flex;
+        /* fit-content() 是一个 CSS 函数，
+            用于指定一个元素的大小应该适合其内容的大小，同时不超过指定的最大值。
+
+            该函数接受一个参数，即最大尺寸（maximum size）。
+            如果元素的内容小于最大尺寸，则元素的大小将根据内容的大小来确定；
+            如果内容超过了最大尺寸，则元素的大小将不会超过最大尺寸。*/
+            grid-template-columns: fit-content(300px) fit-content(300px) 1fr;
+            gap: 5px;
+            box-sizing: border-box;
+            height: 200px;
+            width: 100%;
+            background-color: #8cffa0;
+            padding: 10px;
+        }
+
+        #container>div {
+            background-color: #8ca0ff;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div>Item as wide as the content.</div>
+        <div>
+            Item with more text in it. Because the contents of it are wider than the
+            maximum width, it is clamped at 300 pixels.
+        </div>
+        <div>Flexible item</div>
+    </div>
+</body>
+
+</html>

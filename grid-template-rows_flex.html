@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>grid-template-rows-flex</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-rows: 1fr 2fr 3fr; /* 每行的大小为相对比例 */
+      gap: 10px;
+    }
+    .item {
+      background-color: lightblue;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+  </div>
+</body>
+</html>

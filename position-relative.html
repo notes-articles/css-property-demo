@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position-relative</title>
+
+    <style>
+        .outline {
+            /* 能设置宽高，不独占一行 */
+            display: inline-block;
+            border: 2px dashed black;
+            margin: 40px 0 0 40px;
+        }
+
+        .box {
+            width: 10rem;
+            height: 10rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: lightblue;
+            /* 相对定位
+            相对于其在文档中的原始位置向上或向下移动 */
+            /* 不脱离文档流 */
+            position: relative;
+            /* top: 50px; */
+            /* top: -50px; */
+            /* left: 50px; */
+            /* left: -50px; */
+            /* right: 50px; */
+            right: -50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outline">
+        <div class="box">
+            <pre>rleative</pre>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border-image-slice</title>
+
+    <style>
+        body {
+            background-color: lightgray;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 10rem;
+            height: 10rem;
+            background-color: aqua;
+            border: 2.5rem solid red;
+            border-image-source: url('./images/flat-abstract-doodle-background_23-2149316038.avif');
+            /* 数值：value不带px */
+            /* border-image-slice: 125 0 125 0; */
+            /* border-image-slice: 0 125 0 125; */
+            /* border-image-slice: 0 125 125 0; */
+            /* border-image-slice: 125 125 0 0; */
+            border-image-slice: 125;
+
+            /* 百分比：相对图片的百分比 */
+            /* border-image-slice: 10%; */
+            /* border-image-slice: 50%; */
+
+            /* fill：可选的，border-image-slice中间区域的背景图像，用您提供的边框图像填充它 */
+            /* border-image-slice: 78 65 70 75 fill; */
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container"></section>
+</body>
+
+</html>

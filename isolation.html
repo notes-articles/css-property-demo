@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>isolation</title>
+
+    <style>
+        .big-square {
+            width: 200px;
+            height: 210px;
+            background-color: rgb(0, 255, 0);
+        }
+
+        .small-square {
+            background-color: rgb(255, 255, 0);
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            padding: 2px;
+            /* mix-blend-mode: difference; 是 CSS 中的一个属性，用于指定元素的混合模式。
+            这个属性定义了两个图层如何混合在一起，其中一个图层是元素本身的内容，另一个图层通常是它的背景。
+            在这种情况下，difference 是一种混合模式，它会通过将两个颜色的通道值相减来创建新的颜色值。
+            如果通道值相同，则结果为黑色（全零）。
+            */
+            mix-blend-mode: difference;
+        }
+
+        .isolation-auto {
+            isolation: auto;
+        }
+
+        .isolation-isolate {
+            isolation: isolate;
+        }
+    </style>
+</head>
+<body>
+    <div class="big-square">
+        <div class="isolation-auto">
+            <div class="small-square">auto</div>
+        </div>
+        <div class="isolation-isolate">
+            <div class="small-square">isolate</div>
+        </div>
+    </div>
+</body>
+</html>

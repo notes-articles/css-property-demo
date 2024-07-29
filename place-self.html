@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>place-self</title>
+<style>
+    .grid-container {
+        display: grid;
+        width: 300px;
+        height: 200px;
+        border: 2px solid #333;
+    }
+
+    .grid-item {
+        background-color: lightblue;
+        width: 50px;
+        height: 50px;
+        border: 1px solid #666;
+    }
+
+    .item-1 {
+        place-self: start center;
+    }
+
+    .item-2 {
+        place-self: center start;
+    }
+
+    .item-3 {
+        place-self: end end;
+    }
+</style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item item-1">1</div>
+        <div class="grid-item item-2">2</div>
+        <div class="grid-item item-3">3</div>
+    </div>
+</body>
+</html>

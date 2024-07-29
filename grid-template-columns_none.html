@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-template-columns_fit-content</title>
+
+    <style>
+        .container {
+            display: grid;
+            grid-auto-flow: column;
+            /* 没有明确的网格定义 列的大小由 grid-auto-columns 确定 */
+            /* 列的隐式生成 */
+            grid-auto-columns: 100px;
+            gap: 10px;
+        }
+
+        .item {
+            background-color: lightblue;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+</body>
+
+</html>

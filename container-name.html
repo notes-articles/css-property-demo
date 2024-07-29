@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>container-name</title>
+
+    <style>
+        .post {
+            container-type: inline-size;
+            container-name: summary;
+            /* 可以简写成 */
+            /* container: summary / inline-size; */
+        }
+
+        @container summary (min-width: 400px) {
+            .card {
+                font-size: 1.5em;
+                /* 
+                使用容器长度单位
+                cqw：查询容器宽度的 1%
+                cqh：查询容器高度的 1%
+                cqi：查询容器内联大小的 1%
+                cqb：查询容器块大小的 1%
+                */
+                /* font-size: max(1.5em, 1.23em + 2cqi); */
+            }
+        }
+
+        /*         
+        嵌套容器查询
+        @container summary (min-width: 400px) {
+            @container (min-width: 800px) {
+                
+         } */
+    </style>
+</head>
+
+<body>
+    <div class="post">
+        <div class="card">
+            <h2>Card title</h2>
+            <p>Card content</p>
+        </div>
+    </div>
+</body>
+
+</html>

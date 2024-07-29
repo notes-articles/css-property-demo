@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>pointer-event</title>
+<style>
+    .container {
+        width: 200px;
+        height: 200px;
+        background-color: lightblue;
+        margin-bottom: 20px;
+    }
+
+    /* 通过伪类 :hover 来演示鼠标样式 */
+    .container:hover {
+        cursor: pointer;
+    }
+
+    /* 第一个案例：pointer-events: auto; 元素可以成为鼠标事件的目标 */
+    .auto {
+        pointer-events: auto;
+    }
+
+    /* 第二个案例：pointer-events: none; 元素不会成为鼠标事件的目标 */
+    .none {
+        pointer-events: none;
+    }
+</style>
+</head>
+<body>
+    <!-- 第一个案例：pointer-events: auto; 元素可以成为鼠标事件的目标 -->
+    <div class="container auto" onclick="alert('Auto')">Pointer Events: Auto</div>
+    
+    <!-- 第二个案例：pointer-events: none; 元素不会成为鼠标事件的目标 -->
+    <div class="container none" onclick="alert('None')">Pointer Events: None</div>
+</body>
+</html>

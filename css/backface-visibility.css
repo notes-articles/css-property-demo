@@ -1,0 +1,79 @@
+.showbf div {
+  backface-visibility: visible;
+}
+
+.hidebf div {
+  backface-visibility: hidden;
+}
+
+th,
+p,
+td {
+  background-color: #eeeeee;
+  margin: 0px;
+  padding: 6px;
+  text-align: left;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 150px;
+  height: 150px;
+  margin: 75px 0 0 75px;
+}
+
+.cube {
+  width: 100%;
+  height: 100%;
+  /* 开启3d空间 */
+  transform-style: preserve-3d;
+  /* 设置景深 */
+  perspective: 550px;
+  /* 设置观察点 */
+  perspective-origin: 150% 150%;
+}
+
+.face {
+  /* 开启定位：使 front、back、right、left、top、bottom 这些 div 脱离文档流。
+     效果：这些 div 会覆盖在一起
+  */
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  color: white;
+  font-size: 60px;
+}
+
+.front {
+  /* 通过设置纯黑色（rgb(0, 0, 0)）并配合透明度，可以创建一个半透明的黑色遮罩层，让其他颜色透过来 */
+  background: rgb(0 0 0 / 30%);
+  transform: translateZ(50px);
+}
+
+.back {
+  background-color: blue;
+  transform: rotateX(180deg) translateZ(50px);
+}
+
+.right {
+  background-color: brown;
+  transform: rotateY(90deg) translateZ(50px);
+}
+
+.left {
+  background-color: burlywood;
+  transform: rotateY(-90deg) translateZ(50px);
+}
+
+.top{
+  background-color: deepskyblue;
+  transform: rotateX(90deg) translateZ(50px);
+  
+}
+
+.bottom {
+  background-color: pink;
+  transform: rotateX(-90deg) translateZ(50px);
+}

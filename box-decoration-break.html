@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-decoration-break</title>
+    <style>
+        .example {
+            background: linear-gradient(to bottom right, yellow, green);
+            border-radius: 16px;
+            border-style: solid;
+            padding: 0em 1em;
+            margin-left: 10px;
+            line-height: 2;
+
+            
+            box-decoration-break: clone;
+            -webkit-box-decoration-break: clone;
+            /* 默认值 */
+            /* box-decoration-break: slice; */
+            /* -webkit-box-decoration-break: slice; */
+        }
+    </style>
+</head>
+<body>
+    <span class="example">
+        The<br>quick<br>orange fox
+    </span>
+</body>
+</html>

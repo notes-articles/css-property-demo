@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>justify-self</title>
+<style>
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 100px); /* 定义两列 */
+        gap: 10px; /* 设置间距 */
+    }
+
+    .grid-item {
+        background-color: #ddd;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .grid-item1 {
+        /* `justify-self` 是 CSS Grid 布局中用于设置单个网格项（grid item）在水平方向上的对齐方式的属性 */
+        justify-self: center; /* 水平居中对齐 */
+    }
+
+    .grid-item2 {
+        justify-self: end; /* 靠右对齐 */
+    }
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+    <div class="grid-item grid-item1">1</div>
+    <div class="grid-item grid-item2">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+</div>
+
+</body>
+</html>

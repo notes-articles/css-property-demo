@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>all</title>
+
+    <style>
+        .choice {
+            margin-bottom: 10px;
+        }
+
+        .container {
+            font-size: 30px;
+            color: aqua;
+            border: 5px solid #e18728;
+            background-color: yellow;
+            width: 85%;
+            height: 90px;
+            line-height: 90px;
+            padding: 20px;
+        }
+
+        .inherit {
+            /* 继承父级的所有属性，包括不可向下传递的属性border、background-color、width等 */
+            all: inherit;
+        }
+
+        .initial {
+            /* 所有属性都使用初始值 */
+            all: initial;
+        }
+
+        .unset {
+            /* 默认值。有可以继承的属性值，就继承，没有就使用默认值 */
+            all: unset;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="choice">
+        <button>initial</button>
+        <button>inherit</button>
+        <button>unset</button>
+        <button>remove "all" property</button>
+    </div>
+    <div class="container">
+        <div class="inherit">
+            Change this div's <code>all</code> value
+        </div>
+        <div class="initial">
+            Change this div's <code>all</code> value
+        </div>
+        <div class="unset">
+            Change this div's <code>all</code> value
+        </div>
+    </div>
+</body>
+
+</html>

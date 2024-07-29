@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scroll-padding</title>
+
+    <style>
+        .scroll {
+            width: 200px;
+            height: 200px;
+            overflow: auto;
+            scroll-snap-type: y mandatory;
+            scroll-padding-top: 10px;
+        }
+
+        .item {
+            height: 100%;
+            scroll-snap-align: start;
+        }
+
+        .item:nth-child(2n){
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="scroll">
+    <section class="item">1</section>
+    <section class="item">2</section>
+    <section class="item">3</section>
+    <section class="item">4</section>
+    </div>
+</body>
+
+</html>

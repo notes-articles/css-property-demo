@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resize</title>
+
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            /* 添加滚动条，以便容纳内容 */
+            overflow: auto;
+            /* 定义元素宽高是否可修改 */
+            resize: both;
+
+        }
+
+        /* 鼠标样式提示用户可以调整元素大小 */
+        .container:hover {
+            cursor: nwse-resize;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+    </div>
+</body>
+
+</html>

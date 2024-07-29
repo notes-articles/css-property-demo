@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>column-count</title>
+
+    <style>
+        .text-box {
+            column-count: 4;
+            column-width: 50px;
+            column-gap: 3em;
+            column-rule: 2px dashed red;
+        }
+
+        p::first-line {
+            font-size: 2rem;
+        }
+
+        p {
+            break-before: column;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text-box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique praesentium sequi qui voluptates maxime
+            laudantium error ullam enim quia voluptas fuga est eligendi sint dolores eius consectetur incidunt,
+            recusandae nam!</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas quod beatae saepe velit assumenda officia
+            labore, rem veniam similique dolorem.</p>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident blanditiis quod autem neque, similique
+            quisquam nesciunt, excepturi odio dolorem quia impedit laboriosam, deleniti delectus dolore. Ad dolorum
+            reiciendis mollitia excepturi natus ex accusantium?</p>
+    </div>
+
+</body>
+
+</html>

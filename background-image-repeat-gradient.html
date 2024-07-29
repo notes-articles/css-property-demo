@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-image-repeat-gradient</title>
+    <style>
+        .box {
+            width: 300px;
+            aspect-ratio: 1/1;
+            border: 1px solid gray;
+            float: left;
+            margin-left: 30px;
+        }
+
+        .box1 {
+            background-image: repeating-linear-gradient(red 50px, yellow 90px, green 120px);
+        }
+
+        .box2 {
+            background-image: repeating-radial-gradient(red 50px, yellow 90px, green 120px);
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">重复线性渐变</div>
+    <div class="box box2">重复径向渐变</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>grid-template-rows-max-content</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-rows: min-content min-content min-content; /* 每行的大小为最大最小内容贡献 */
+      gap: 10px;
+    }
+    .item {
+      background-color: lightblue;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="container">
+      <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis mi eu elit malesuada pretium. Integer id tortor lorem.</div>
+      <div class="item">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque sed suscipit velit.Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque sed suscipit velit.Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque sed suscipit velit.</div>
+      <div class="item">Donec non sagittis justo. Nullam dignissim porttitor metus, eget dapibus nunc posuere nec. Vestibulum ullamcorper odio nec massa venenatis, ac commodo velit finibus.</div>
+    </div>
+  </div>
+</body>
+</html>

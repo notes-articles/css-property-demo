@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter-set</title>
+
+    <style>
+        .chapters {
+            padding: 3rem;
+            counter-reset: chapter;
+        }
+
+        h2:first-of-type::before {
+            counter-set: chapter 100;
+        }
+
+        h2:before {
+            color: red;
+            content: "Chapter " counter(chapter) ": ";
+            counter-increment: chapter;
+        }
+
+        .support {
+            border: 1px solid #ff8a00;
+            font-size: 0.8rem;
+            line-height: 1.25;
+            margin: 0 0 1.5rem;
+            padding: 0.75rem 1rem 0.75rem 4rem;
+            position: relative;
+            width: min(80%, 425px);
+        }
+
+        .support:before {
+            content: "Hey!";
+            font-style: italic;
+            font-weight: 700;
+            color: #ff8a00;
+            position: absolute;
+            top: 0.75rem;
+            left: 1rem;
+        }
+
+        @supports (counter-set: none) {
+            .support {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="chapters">
+
+        <p class="support">
+            It looks like your browser does not support the <code>counter-set</code> property. Try viewing this demo in
+            Firefox instead. </p>
+
+        <h1>Learning CSS</h1>
+
+        <h2>Forward</h2>
+        <h2>Introduction to CSS</h2>
+        <h2>Color</h2>
+        <h2>Text</h2>
+        <h2>The Box Model</h2>
+        <h2>Lists</h2>
+        <h2>Tables</h2>
+        <h2>Forms</h2>
+        <h2>Images</h2>
+        <h2>Conclusion</h2>
+    </div>
+</body>
+
+</html>

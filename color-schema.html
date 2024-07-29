@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>color-schema</title>
+
+    <style>
+        :root {
+            color-scheme: light;
+        }
+
+        .dark {
+            color-scheme: dark;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Heading 1</h1>
+    <button>
+        Toggle Color
+    </button>
+    <script>
+        let root = document.querySelector(":root");
+        let button = document.querySelector("button");
+
+        button.addEventListener('click', () => {
+            event.preventDefault();
+            root.classList.toggle('dark');
+        })
+    </script>
+</body>
+
+</html>

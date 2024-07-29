@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text-align</title>
+
+    <style>
+        section {
+            margin: 30px;
+        }
+        
+        /*
+         text-decoration是下面几个属性的缩写
+            text-decoration-line, 
+            text-decoration-color, 
+            text-decoration-style 
+         */
+        .underline {
+            text-decoration: underline;
+        }
+
+        .underline-dotted {
+            text-decoration: underline dotted;
+        }
+
+        .underline-dotted-red {
+            text-decoration: underline dotted red;
+        }
+
+        .green-underline-dotted {
+            text-decoration: green underline dotted;
+        }
+
+        .underline-overline-dotted-red {
+            text-decoration: underline overline wavy green;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <span class="underline">Lorem</span> ipsum dolor sit amet.
+    </section>
+    <section>
+        <span class="underline-dotted">Lorem</span> ipsum dolor sit amet.
+    </section>
+    <section>
+        <span class="underline-dotted-red">Lorem</span> ipsum dolor sit amet.
+    </section>
+    <section>
+        <span class="green-underline-dotted">Lorem</span> ipsum dolor sit amet.
+    </section>
+    <section>
+        <span class="underline-overline-dotted-red">Lorem</span> ipsum dolor sit amet.
+    </section>
+</body>
+
+</html>

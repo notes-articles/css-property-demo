@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border-image-repeat</title>
+    <style>
+        .container {
+            width: 10rem;
+            height: 10rem;
+            border: 2rem ridge gray;
+            border-image-source: url('./images/background.gif');
+            border-image-slice: 120;
+             /* 默认值 */
+            /* border-image-repeat: stretch; */
+
+            /* 重复边框图像以填充边框区域 
+            没有更多空间 则剪裁 以正确填充剩余空间以防止间隙 */
+            /* border-image-repeat: repeat; */
+
+            /* 重复并拉伸图像以填充所有边框
+            缩放图像以防止出现间隙 */
+            /* border-image-repeat: round; */
+
+            /* 有剩余空间 将其分布在图块周围*/
+            /* border-image-repeat: space; */
+
+            /* 二值语法
+            第一个关键字设置水平方向（顶部和底部边框边缘）的缩放和平铺
+            第二个关键字设置垂直方向（左右边框边缘）的缩放和平铺 */
+            border-image-repeat: stretch round;
+        }
+    </style>
+</head>
+<body>
+    <section class="container"></section>
+</body>
+</html>

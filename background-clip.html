@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-clip</title>
+    <style>
+        h2 {
+            text-align: center;
+        }
+
+        .container{
+            width: 200px;
+            height: 200px;
+            border: 10px dashed rgb(139, 212, 212);
+            background-color: yellow;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .border-box {
+            background-clip: border-box;
+        }
+
+        .padding-box {
+            background-clip: padding-box;
+        }
+
+        .content-box {
+            background-clip: content-box;
+        }
+
+        .text {
+            width: 100vw;
+            border: none;
+            font-size: 80px;
+            /* 生成花字 */
+            background: radial-gradient(circle at center center,white,#111) no-repeat;
+            background-clip: text; 
+            /* color: transparent; */
+            -webkit-text-fill-color: transparent;  
+        }
+    </style>
+</head>
+<body>
+    <h2>background-clip: border-box;</h2>
+    <div class="container border-box">
+        This paragraph is the content
+    </div>
+    <h2>background-clip: padding-box;</h2>
+    <div class="container padding-box">
+        This paragraph is the content
+    </div>
+    <h2>background-clip: content-box;</h2>
+    <div class="container content-box">
+        This paragraph is the content
+    </div>
+    <h2>background-clip: text;</h2>
+    <div class="container text">
+        This paragraph is the content
+    </div>
+</body>
+</html>

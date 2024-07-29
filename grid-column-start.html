@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-column-start</title>
+
+    <style>
+        .container {
+            display: grid;
+            /* grid-template-rows: 100px 100px 100px;
+            grid-template-columns: 100px 100px; */
+
+            /* 自定义 行、列 的名称 */
+            grid-template-rows: [row1]100px [row2]100px [row3]100px;
+            grid-template-columns: [column1]100px [column2]100px;;
+
+            gap: 10px;
+        }
+
+        .item {
+            background-color: #ccc;
+            padding: 20px;
+            text-align: center;
+        }
+
+        
+        .item-2 {
+            /* 默认值: auto 关键字 */
+            grid-column-start: auto;
+
+            /* span 关键字 跨越两列 */
+            /* grid-column-start: span 2; */
+
+            /* 整数值 */
+            /* grid-column-start: 2; */
+
+            /* 使用自定义名称 */
+            /* grid-column-start: column2; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item item-2">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+    </div>
+</body>
+</html>

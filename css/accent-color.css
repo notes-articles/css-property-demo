@@ -1,0 +1,84 @@
+:root {
+    color-scheme: light dark;
+  }
+  
+  body {
+    display: grid;
+    padding: 3rem 0;
+  }
+  
+  form {
+    display: grid;
+    grid-auto-columns: fit-content(50%);
+    grid-template-areas: "a a";
+    margin: auto;
+    place-items: center;
+    padding: 0;
+    gap: 1rem;
+  }
+  
+  form section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  form section:first-child {
+    color-scheme: light;
+  }
+  form section:last-child {
+    color-scheme: dark;
+  }
+  
+  fieldset {
+    border-radius: 8px;
+    color-scheme: light;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0;
+    padding: 1.5rem;
+  }
+  
+  h2 {
+    margin: 0;
+  }
+  
+  .light {
+    color-scheme: light;
+  }
+  
+  .light .accent {
+    accent-color: #30cc7e;
+  }
+  
+  .dark {
+    color-scheme: dark;
+  }
+  
+  .dark .accent {
+    accent-color: hsla(180, 100%, 70%, 1);
+  }
+  
+  .dark fieldset {
+    background: #100f33;
+    border-color: #100f33;
+    color: #fff;
+  }
+  
+  .notice {
+    background: #fff9c4;
+    border-radius: 6px;
+    color: #333;
+    margin: 0 auto 1.5rem;
+    padding: 0.5rem;
+    text-align: center;
+    width: clamp(300px, 60%, 850px);
+  }
+  
+  @supports (accent-color: #fff) {
+    .notice {
+      display: none;
+    }
+  }

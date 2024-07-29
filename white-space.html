@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>white-space Example</title>
+<style>
+    .container {
+        width: 200px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-top: 30px;
+    }
+
+    .normal {
+        white-space: normal; /* 默认值，空白符会被合并 */
+    }
+
+    .nowrap {
+        white-space: nowrap; /* 空白符会被合并，文本不会换行 */
+    }
+
+    .pre {
+        white-space: pre; /* 空白符会被保留，文本按照输入时的格式显示 */
+    }
+
+    .pre-wrap {
+        white-space: pre-wrap; /* 空白符会被保留，文本会在换行符处换行 */
+    }
+
+    .pre-line {
+        white-space: pre-line; /* 空白符会被合并，文本会在换行符处换行 */
+    }
+</style>
+</head>
+<body>
+
+<div class="container normal">
+    This is a long text with spaces that will wrap normally.
+</div>
+
+<div class="container nowrap">
+    This is a long text with spaces that will not wrap.
+</div>
+
+<div class="container pre">
+    This is a long text
+    with spaces
+    that will be displayed
+    exactly as it is
+    written.
+</div>
+
+<div class="container pre-wrap">
+    This is a long text with spaces that will wrap at the line breaks.
+</div>
+
+<div class="container pre-line">
+    This is a long text with spaces that will wrap at the line breaks but spaces will be collapsed.
+</div>
+
+</body>
+</html>

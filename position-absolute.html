@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position-absolute</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .outline {
+            /* absolute定位脱离文档流，这里设置宽高，避免子元素absolute定位脱离文档流导致塌陷 */
+            width: 10rem;
+            height: 10rem;
+            display: inline-block;
+            border: 2px dashed black;
+            margin: 40px 0 0 40px;
+        }
+
+        .outline--relative {
+            position: relative;
+            left: 150px;
+        }
+
+        .box {
+            width: 10rem;
+            height: 10rem;
+            background-color: lightblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* position设置为absolute时, 元素将相对于其最近的定位祖先（或文档，如果没有定位祖先） */
+            /* 脱离文档流 */
+            position: absolute;
+            top: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outline">
+        <div class="box">
+            <pre>absolute <br> (to page)</pre>
+        </div>
+    </div>
+
+    <div class="outline outline--relative">
+        <div class="box">
+            <pre>absolute <br> (to parent)</pre>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      quotes: "“" "”" "‘" "’";
+    }
+
+    p::before {
+      content: open-quote;
+    }
+
+    p::after {
+      content: close-quote;
+    }
+
+    q::before {
+      content: open-quote;
+    }
+
+    q::after {
+      content: close-quote;
+    }
+  </style>
+  <title>Quote Example</title>
+</head>
+<body>
+  <blockquote>
+    <p>This is a block quote.</p>
+  </blockquote>
+
+  <p>This is a <q>inline quote</q> in the text.</p>
+</body>
+</html>

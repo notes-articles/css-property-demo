@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-repeat</title>
+    <style>
+        ol {
+            list-style: none;
+        }
+
+        ol,
+        li {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        div {
+            width: 160px;
+            height: 70px;
+            /* https://github.com/mdn/content/blob/main/files/en-us/web/css/background-repeat/starsolid.gif */
+            background-image: url('./images/starsolid.gif');
+        }
+
+        .one {
+            background-repeat: no-repeat;
+        }
+
+        .two {
+            /* 默认值 */
+            background-repeat: repeat;
+        }
+
+        .three {
+            background-repeat: repeat-x;
+        }
+
+        .four {
+            background-repeat: repeat-y;
+        }
+
+        .five {
+            background-repeat: space;
+        }
+
+        .six {
+            background-repeat: round;
+        }
+
+        .seven {
+            background-image: url('./images/starsolid.gif'), url('./images/favicon32.png');
+            background-repeat: repeat-x, repeat-y;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>
+            no-repeat
+            <div class="one">
+
+            </div>
+        </li>
+        <li>
+            repeat
+            <div class="two">
+
+            </div>
+        </li>
+        <li>
+            repeat-x
+            <div class="three">
+
+            </div>
+        </li>
+        <li>
+            repeat-y
+            <div class="four">
+
+            </div>
+        </li>
+        <li>
+            space
+            <div class="five">
+
+            </div>
+        </li>
+        <li>
+            round
+            <div class="six">
+
+            </div>
+        </li>
+        <li>
+            repeat-x,repeat-y(multiple images)
+            <div class="seven">
+
+            </div>
+        </li>
+    </ol>
+</body>
+</html>

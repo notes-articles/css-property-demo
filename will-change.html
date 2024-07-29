@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>will-change</title>
+<style>
+    .container {
+        width: 300px;
+        height: 300px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: transform 1s ease-in-out;
+    }
+
+    .container:hover .box {
+        transform: translate(-50%, -50%) rotate(360deg) scale(1.5);
+        will-change: transform; /* 提示浏览器将会发生变换 */
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="box"></div>
+</div>
+
+</body>
+</html>

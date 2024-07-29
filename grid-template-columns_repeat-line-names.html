@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-template-columns_repeat-line-names</title>
+
+    <style>
+        #container {
+            display: grid;
+            /* 每个列指定不同的线名 */
+            /* grid-template-columns: repeat(4, [c1] 100px 
+                                      [c2] 200px 
+                                      [c3] 300px  
+                                      [c4] 400px );  */
+
+            grid-template-columns: repeat(4, [c1-start] 100px [c1-end c2-start] 200px [c2-end c3-start] 300px [c3-end c4-start] 400px [c4-end]);
+            gap: 10px;
+        }
+
+        .item {
+            background-color: lightblue;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+    </div>
+</body>
+
+</html>

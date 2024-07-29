@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>container-type</title>
+
+    <style>
+        /* A container context based on inline size */
+        .post {
+            container-type: inline-size;
+        }
+
+        /* Apply styles if the container is narrower than 650px */
+        @container (width < 650px) {
+            .card {
+                width: 50%;
+                background-color: gray;
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="post">
+        <div class="card">
+            <h2>Card title</h2>
+            <p>Card content</p>
+        </div>
+    </div>
+</body>
+
+</html>

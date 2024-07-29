@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>order</title>
+<style>
+    .container {
+        display: flex;
+    }
+
+    .box {
+        width: 100px;
+        height: 100px;
+        margin: 5px;
+        border: 1px solid #ccc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+    }
+
+    /* 用于定义子元素的排列顺序。数值越小，元素越靠前。 */
+
+    .box1 {
+        order: 2; /* 设置为第二个显示 */
+    }
+
+    .box2 {
+        order: 3; /* 设置为第三个显示 */
+    }
+
+    .box3 {
+        order: 1; /* 设置为第一个显示 */
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="box box1">Box 1</div>
+    <div class="box box2">Box 2</div>
+    <div class="box box3">Box 3</div>
+</div>
+
+</body>
+</html>

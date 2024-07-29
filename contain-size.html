@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contain-size</title>
+
+    <style>
+        .container {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid red;
+            /* 元素的渲染不会受到其子元素内容的影响 */
+            contain: size;
+        }
+
+        p {
+            border: 1px solid #333;
+            margin: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+
+    <script>
+        let divE = document.querySelector(".container");
+        divE.addEventListener('click',function(){
+            let pnode = document.createElement('p');
+            pnode.innerText = 'Code';
+            divE.appendChild(pnode);
+        })
+    </script>
+</body>
+</html>

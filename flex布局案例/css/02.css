@@ -1,0 +1,34 @@
+
+img {
+    width: 50px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+.btn {
+    padding: 10px 30px;
+    margin-left: 10px;
+    color: #343137;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+.btn-primary {
+    border: 1px solid #343137;
+}
+
+.btn-default {
+    border: 1px solid #ff7a33;
+    background: #ff7a33;
+    color: #fff;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation-caret</title>
+
+    <style>
+        @keyframes blink {
+
+            from,
+            to {
+                border-color: transparent;
+            }
+
+            50% {
+                border-color: white;
+            }
+        }
+
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        span {
+            border-bottom: 2px solid white;
+            animation: blink 1s step-end infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <span>&nbsp;</span>
+</body>
+
+</html>

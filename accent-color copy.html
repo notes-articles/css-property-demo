@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>accent-color</title>
+
+    <style>
+        :root {
+            color-scheme: dark light;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 50px;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .light {
+            color-scheme: light;
+        }
+
+        .light .accent {
+            accent-color: #30cc7e;
+        }
+
+        .dark {
+            color-scheme: dark;
+        }
+
+        .dark .accent {
+            accent-color: hsla(180, 100%, 70%, 1);
+        }
+
+        .dark fieldset {
+            background: #100f33;
+            border-color: #100f33;
+            color: #fff;
+        }
+
+        fieldset {
+            color-scheme: light;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 1.5rem;
+        }
+
+        h2 {
+            margin: 0;
+        }
+
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <section class="light">
+            <fieldset>
+                <h2>Checkboxes</h2>
+                <div>
+                    <label for="default-checkbox">Default</label>
+                    <input type="checkbox" name="" id="default-checkbox" checked>
+                </div>
+                <div>
+                    <label for="accent-checkbox">Accent</label>
+                    <input type="checkbox" name="" id="accent-checkbox" checked class="accent">
+                </div>
+            </fieldset>
+            <fieldset>
+                <h2>Radio</h2>
+                <div>
+                    <label for="default-radio">Default</label>
+                    <input type="radio" name="" id="default-radio" checked>
+                </div>
+                <div>
+                    <label for="accent-radio">Accent</label>
+                    <input type="radio" name="" id="accent-radio" checked class="accent">
+                </div>
+            </fieldset>
+            <fieldset>
+                <h2>Progress</h2>
+                <div>
+                    <label for="default-progress">Default</label>
+                    <progress id="default-progress" max="100" value="60"></progress>
+                </div>
+                <div>
+                    <label for="accent-progress">Accent</label>
+                    <progress id="default-progress" max="100" value="60" class="accent"></progress>
+                </div>
+            </fieldset>
+            <fieldset>
+                <h2>Range</h2>
+                <div>
+                    <label for="default-range">Default</label>
+                    <input type="range" name="" id="default-range" max="100" min="30" value="60">
+                </div>
+                <div>
+                    <label for="accent-range">Accent</label>
+                    <input type="range" name="" id=accent-range" max="100" min="30" value="60" class="accent">
+                </div>
+            </fieldset>
+        </section>
+        <section class="dark">
+            <fieldset>
+                <h2>Checkboxes</h2>
+                <div>
+                    <label for="default-checkbox">Default</label>
+                    <input type="checkbox" name="" id="default-checkbox" checked>
+                </div>
+                <div>
+                    <label for="accent-checkbox">Accent</label>
+                    <input type="checkbox" name="" id="accent-checkbox" checked class="accent">
+                </div>
+            </fieldset>
+            <fieldset>
+                <h2>Radio</h2>
+                <div>
+                    <label for="default-radio">Default</label>
+                    <input type="radio" name="" id="default-radio" checked>
+                </div>
+                <div>
+                    <label for="accent-radio">Accent</label>
+                    <input type="radio" name="" id="accent-radio" checked class="accent">
+                </div>
+            </fieldset>
+            <fieldset>
+                <h2>Progress</h2>
+                <div>
+                    <label for="default-progress">Default</label>
+                    <progress id="default-progress" max="100" value="60"></progress>
+                </div>
+                <div>
+                    <label for="accent-progress">Accent</label>
+                    <progress id="default-progress" max="100" value="60" class="accent"></progress>
+                </div>
+            </fieldset>
+            <fieldset>
+                <h2>Range</h2>
+                <div>
+                    <label for="default-range">Default</label>
+                    <input type="range" name="" id="default-range" max="100" min="30" value="60">
+                </div>
+                <div>
+                    <label for="accent-range">Accent</label>
+                    <input type="range" name="" id=accent-range" max="100" min="30" value="60" class="accent">
+                </div>
+            </fieldset>
+        </section>
+    </form>
+</body>
+
+</html>

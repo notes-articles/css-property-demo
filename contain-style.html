@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contain-style</title>
+
+    <style>
+        body {
+            counter-reset: li-counter;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li::before{
+            counter-increment: li-counter;
+            content: counter(li-counter)" : ";
+        }
+    
+        .container {
+            /* contain: style; 是 CSS 中的一个属性值，它用于指定元素的样式容器。
+            当一个元素设置了 contain: style; 时，
+            它会创建一个新的渲染上下文，
+            该上下文与其子元素的渲染行为是独立的，
+            这意味着这个元素的样式不会影响到其子元素的布局和绘制，
+            并且它的布局和绘制也不会受到其祖先元素或兄弟元素的影响。 */
+            contain: style;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Item A</li>
+        <li>Item B</li>
+        <li class="container">Item C</li>
+        <li>Item D</li>
+        <li>Item E</li>
+      </ul>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>word-break</title>
+    <style>
+        .text {
+            width: 200px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        .break-normal {
+            /* 默认值。浏览器会尽可能在单词之间换行，如果单词太长无法放入一行，则会溢出到下一行。 */
+            word-break: normal;
+        }
+
+        .break-all {
+            /* 允许在单词内部换行，即使单词没有到达行尾。这样可能会导致单词被截断。 */
+            word-break: break-all;
+        }
+
+        .keep-all {
+            /* 只在需要时在字符之间断行，通常用于非拉丁语言（如中文、日文、韩文）的文字排版，以保持连续性。 */
+            word-break: keep-all;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="text break-normal">ThisIsALongWordThatShouldNotBeBrokenEvenIfItDoesNotFitIntoOneLine.</p>
+
+    <p class="text break-all">ThisIsALongWordThatShouldBeBrokenEvenIfItDoesNotFitIntoOneLine.</p>
+
+    <p class="text keep-all">这是一段中文文本，应该尽可能保持连续，不应在字符之间断行。</p>
+</body>
+
+</html>

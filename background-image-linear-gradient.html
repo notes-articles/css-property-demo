@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-image-linear-gradient</title>
+    <style>
+        body {
+            display: flex;
+            gap: 10px;
+        }
+
+        .box {
+            width: 130px;
+            aspect-ratio: 1/1;
+            border: 1px solid black;
+            font-size: 12px;
+            color: white;
+        }
+
+        .box1 {
+            background-image: linear-gradient(red, yellow, green);
+        }
+
+        .box2 {
+            background-image: linear-gradient(to right top, red, yellow, green);
+        }
+
+        .box3 {
+            background-image: linear-gradient(90deg, red, yellow, green);
+        }
+
+        .box4 {
+            background-image: linear-gradient(red 30px, yellow 50px, green 70px);
+        }
+
+        .box5 {
+            background-image: linear-gradient(30deg, red, yellow, green);
+            font-size: 40px;
+            text-align: center;
+            line-height: 130px;
+            font-weight: bold;
+            color: transparent;
+            background-clip: text;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">默认情况（从上到下）</div>
+    <div class="box box2">通过关键字调整线性渐变的方向</div>
+    <div class="box box3">通过角度调整线性渐变的方向</div>
+    <div class="box box4">调整线性渐变的区域</div>
+    <!-- 通过线性渐变创建花字 -->
+    <div class="box box5">你好啊</div>
+</body>
+
+</html>

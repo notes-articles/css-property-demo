@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contain-style2</title>
+
+    <style>
+        body {
+            quotes: "[" "]" "‹" "›";
+        }
+
+        .open-quote::before {
+            content: open-quote;
+        }
+
+        .close-quote::after {
+            content: close-quote;
+        }
+
+        .contain-style {
+            /* 由于包含，第一个结束引号会忽略内部范围并使用外部范围的结束引号：*/
+            contain: style;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- With style containment -->
+    <span class="open-quote">
+        outer
+        <span class="contain-style">
+            <span class="open-quote"> inner </span>
+        </span>
+    </span>
+    <span class="close-quote"> close </span>
+    <br>
+    <!-- Without containment -->
+    <span class="open-quote">
+        outer
+        <span>
+            <span class="open-quote"> inner </span>
+        </span>
+    </span>
+    <span class="close-quote"> close </span>
+</body>
+
+</html>

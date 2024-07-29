@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text-overflow</title>
+
+    <style>
+        div {
+            width: 160px;
+            border: 1px solid black;
+            margin-top: 30px;
+
+            /* 使用text-overflow 必须要有这两个属性 */
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .clip {
+            text-overflow: clip;
+        }
+
+        .ellipsis {
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+    <div class="clip">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, at.
+    </div>
+    <div class="ellipsis">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, at.
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>directioin</title>
+
+    <style>
+        /* 使用 direction 改变元素内部的块级元素的排列方向 */
+        .ltrT {
+            direction: ltr;
+        }
+
+        .rtlT {
+            direction: rtl;
+        }
+
+        p {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="ltrT">
+        <p>This</p>
+        <p>paragraph</p>
+        <p>goes</p>
+        <p>from</p>
+        <p>left</p>
+        <p>to</p>
+        <p>right</p>
+        <p>.</p>
+    </div>
+    
+    <div class="rtlT">
+        <p>This</p>
+        <p>paragraph</p>
+        <p>goes</p>
+        <p>from</p>
+        <p>right</p>
+        <p>to</p>
+        <p>left</p>
+        <p>.</p>
+    </div>
+</body>
+</html>

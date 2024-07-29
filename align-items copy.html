@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-items</title>
+    <style>
+        .container {
+            display: flex;
+            gap: 10px;
+        }
+
+        .item {
+            width: 310px;    
+            height: 300px;
+            border: 1px solid black;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .flex-item {
+            width: 80px;
+            height: 80px;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 600;
+            background-color: tomato;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .flex-start {
+            align-items: flex-start;
+        }
+
+        .flex-end {
+            align-items: flex-end;
+        }
+
+        .center {
+            align-items: center;
+        }
+
+        .stretch {
+            .flex-item {
+                /* 设置高度由内容撑开 */
+                height: auto;
+            }
+            align-items: stretch;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item flex-start">
+            <div class="flex-item">1</div>
+            <div class="flex-item">2</div>
+            <div class="flex-item">3</div>
+            <div class="flex-item">4</div>
+            <div class="flex-item">5</div>
+            <div class="flex-item">6</div>
+        </div>
+        <div class="item flex-end">
+            <div class="flex-item">1</div>
+            <div class="flex-item">2</div>
+            <div class="flex-item">3</div>
+            <div class="flex-item">4</div>
+            <div class="flex-item">5</div>
+            <div class="flex-item">6</div>
+        </div>
+        <div class="item center">
+            <div class="flex-item">1</div>
+            <div class="flex-item">2</div>
+            <div class="flex-item">3</div>
+            <div class="flex-item">4</div>
+            <div class="flex-item">5</div>
+            <div class="flex-item">6</div>
+        </div>
+        <div class="item stretch">
+            <div class="flex-item">1</div>
+            <div class="flex-item">2</div>
+            <div class="flex-item">3</div>
+            <div class="flex-item">4</div>
+            <div class="flex-item">5</div>
+            <div class="flex-item">6</div>
+        </div>
+    </div>
+</body>
+</html>

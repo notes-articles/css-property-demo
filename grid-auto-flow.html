@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-auto-flow</title>
+
+    <style>
+        #grid {
+            height: 200px;
+            width: 200px;
+            display: grid;
+            gap: 10px;
+            grid-template: repeat(4, 1fr) / repeat(2, 1fr);
+            grid-auto-flow: column;
+            /* or 'row', 'row dense', 'column dense' */
+        }
+
+        #item1 {
+            background-color: lime;
+            grid-row-start: 3;
+        }
+
+        #item2 {
+            background-color: yellow;
+        }
+
+        #item3 {
+            background-color: blue;
+        }
+
+        #item4 {
+            grid-column-start: 2;
+            background-color: red;
+        }
+
+        #item5 {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- grid-auto-flow 是 CSS 属性，用于控制在隐式网格中项目的自动放置方式。
+    row: 表示项目将沿着行的方向自动放置，即先沿着水平方向排满一行，然后换行放置下一行。
+    column: 表示项目将沿着列的方向自动放置，即先沿着垂直方向排满一列，然后换列放置下一列。
+    dense: 可选值，表示项目将在网格中填充空白区域，使得网格填充更加密集。如果启用 dense，项目会尽可能地填充空白区域，而不是按照原始的顺序放置。
+ -->
+
+
+    <div id="grid">
+        <div id="item1">item1</div>
+        <div id="item2">item2</div>
+        <div id="item3">item3</div>
+        <div id="item4">item4</div>
+        <div id="item5">item5</div>
+    </div>
+    <select id="direction">
+        <option value="column">column</option>
+        <option value="row">row</option>
+    </select>
+    <input id="dense" type="checkbox" />
+    <label for="dense">dense</label>
+
+    <script>
+        function changeGridAutoFlow() {
+            const grid = document.getElementById("grid");
+            const direction = document.getElementById("direction");
+            const dense = document.getElementById("dense");
+            let gridAutoFlow = direction.value === "row" ? "row" : "column";
+
+            if (dense.checked) {
+                gridAutoFlow += " dense";
+            }
+
+            grid.style.gridAutoFlow = gridAutoFlow;
+        }
+
+        const selectElem = document.querySelector("select");
+        const inputElem = document.querySelector("input");
+        selectElem.addEventListener("change", changeGridAutoFlow);
+        inputElem.addEventListener("change", changeGridAutoFlow);
+    </script>
+</body>
+
+</html>

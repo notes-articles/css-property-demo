@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>grid-template-rows_fit-content</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: fit-content(100px) fit-content(150px); /* 行高度根据内容调整，最小高度为100px和150px */
+      grid-gap: 10px;
+    }
+    .item {
+      background-color: lightblue;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">Short content</div>
+    <div class="item">Medium-length content Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+    <div class="item">Long content Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis mi eu elit malesuada pretium. Integer id tortor lorem.</div>
+    <div class="item">Short content</div>
+    <div class="item">Medium-length content Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+    <div class="item">Long content Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis mi eu elit malesuada pretium. Integer id tortor lorem.</div>
+  </div>
+</body>
+</html>

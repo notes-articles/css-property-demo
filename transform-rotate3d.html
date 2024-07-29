@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform-rotate3d</title>
+    <style>
+        .outer {
+            width: 200px;
+            aspect-ratio: 1/1;
+            border: 1px solid gray;
+            margin: 100px auto;
+            /* 开启3d空间 */
+            transform-style: preserve-3d;
+            /* 设置景深 */
+            perspective: 100px;
+            /* 设置透视点的位置 */
+            perspective-origin: 200px 200px;
+        }
+
+        .inner {
+            width: 100px;
+            height: 100px;
+            background-color: deepskyblue;
+            /* transform: rotateX(30deg); */
+            /* transform: rotateY(30deg); */
+            transform: rotate3d(1, 1, 1, 30deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position-fixed</title>
+
+    <style>
+        body{
+            height: 6000px;
+        }
+
+        .outline {
+            /* 设置宽高，避免塌陷 */
+            width: 10rem;
+            height: 10rem;
+            display: inline-block;
+            border: 2px dashed black;
+            margin: 40px 0 0 40px;
+        }
+
+        .box {
+            width: 10rem;
+            height: 10rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: sandybrown;
+            /* 元素将相对于浏览器的视口 */
+            /* 脱离文档流 */
+            position: fixed;
+            top: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outline">
+        <div class="box">
+            <pre>fixed</pre>
+        </div>
+    </div>
+</body>
+</html>

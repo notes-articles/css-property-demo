@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>grid-template-rows-auto</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-rows: auto auto auto; /* 每行自动调整大小 */
+      gap: 10px;
+    }
+    .item {
+      background-color: lightblue;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">This is a short item Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem reprehenderit debitis distinctio. Atque necessitatibus natus earum doloribus, nemo pariatur debitis.</div>
+    <div class="item">This is a medium-length item Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus excepturi ad repudiandae earum ratione blanditiis quis itaque ut reprehenderit quo dolorum recusandae dolores quas mollitia quisquam fugit aliquam, explicabo, laboriosam sequi perspiciatis! Provident neque minima omnis similique rem libero corporis optio, totam modi fugiat asperiores assumenda ad rerum harum repudiandae?</div>
+    <div class="item">This is a very long item that will take up the maximum available space in its row.
+       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae pariatur voluptatem magnam natus praesentium neque deleniti, eum repudiandae possimus laboriosam enim, fuga, quasi error. Odit labore harum nostrum aliquam a expedita quibusdam accusantium iure iste non, neque cupiditate nulla reiciendis, enim magnam culpa cumque modi atque temporibus rerum molestiae? Aliquam quae libero consequuntur aspernatur enim minima dicta hic at ab non dolorem asperiores adipisci quis, in maiores quas cupiditate necessitatibus numquam nisi sit quaerat amet autem nostrum qui? Repellat, ipsa.</div>
+  </div>
+</body>
+</html>

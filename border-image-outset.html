@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border-image-outset</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center; gap: 20px;
+        }
+        .container {
+            width: 13rem;
+            height: 13rem;
+            border: 2rem solid greenyellow;
+            background-color: lightblue;
+            border-image-source: url('./images/background.gif');
+            border-image-slice: 120;
+            /* 没有 CSS 单位。该数字是相对于该border-width值的 */
+            border-image-outset: 2;
+
+            /* 长度是带有任何 CSS 单位的数字（例如10px、1.35rem、50%、25dvh等） */
+            /* border-image-outset: 40px; */
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+    </style>
+</head>
+<body>
+    <section class="container"></section>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter</title>
+
+    <style>
+        img {
+            border: 5px solid yellow;
+        }
+
+        /* Gray the second image by 40% and blur by 5px */
+        img:nth-of-type(2) {
+            filter: grayscale(0.4) blur(5px);
+        }
+    </style>
+</head>
+
+<body>
+    <img src="./images/pencil.jpg" alt="Original image is sharp" />
+    <img src="./images/pencil.jpg" alt="The image and border are blurred and muted" />
+
+</body>
+
+</html>

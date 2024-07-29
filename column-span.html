@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>column-span</title>
+</head>
+
+<style>
+    .example {
+        columns: 125px;
+    }
+
+    hr {
+        column-span: all;
+        border-style: dashed;
+        border-width: 1px 0 0;
+        border-top-color: #e74c3c;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    ul {
+        list-style: square;
+        margin-left: 2em;
+    }
+</style>
+
+<body>
+    <div class="example">
+        <h1>A</h1>
+        <ul>
+            <li>aardvark</li>
+            <li>aardwolf</li>
+            <li>aasvogel</li>
+            <li>abacuses</li>
+            <li>abalones</li>
+        </ul>
+        <hr>
+
+        <h1>B</h1>
+        <ul>
+            <li>baalisms</li>
+            <li>baaskaap</li>
+            <li>baaskaps</li>
+            <li>baasskap</li>
+            <li>babassus</li>
+        </ul>
+
+        <hr>
+        <h1>C</h1>
+        <ul>
+            <li>cabalism</li>
+            <li>cabalist</li>
+            <li>caballed</li>
+            <li>cabarets</li>
+            <li>cabbaged</li>
+        </ul>
+    </div>
+</body>
+
+</html>

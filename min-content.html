@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>min-content</title>
+
+    <style>
+        .item {
+            /* 对于文本内容，这意味着内容将利用所有软包装机会，变得与最长的单词一样小。 */
+            width: min-content;
+            background-color: #8ca0ff;
+            padding: 5px;
+            margin-bottom: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="item">Item</div>
+    <div class="item">Item with more text in it.</div>
+
+</body>
+
+</html>

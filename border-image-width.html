@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border-image-width</title>
+    <style>
+        .container {
+            width: 10rem;
+            height: 10rem;
+            padding: 2rem;
+            border: 2rem ridge grey;
+            border-image-source: url('./images/background.gif');
+            border-image-slice: 120;
+            /* 数值 */
+            border-image-width: 2rem 5rem 1rem 3rem; 
+        }
+    </style>
+</head>
+<body>
+    <section class="container"></section>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>line-break</title>
+
+    <style>
+         /* line-break 用于控制在何处允许或禁止换行*/
+        .my-text {
+            /* 设置宽度 */
+            width: 150px;
+            /* 不允许在连续文本中断行 */
+            /* line-break: strict; */
+
+            /* 在断行处允许行内元素断开。 */
+            /* line-break: loose; */
+
+            /* 默认值。表示浏览器可以自行决定在哪里断行*/
+            /* line-break: auto; */
+
+            /* 在断行处尽量保持连续性，但允许连续文本中的断行。这与 loose 类似，但不允许在单词之间断行。 */
+            /* line-break: normal; */
+
+            line-break: anywhere;
+            
+            /* 添加边框用于显示文本边界 */
+            border: 1px solid #ccc;
+            /* 添加内边距 */
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="my-text">
+        ThisIsALongUnbrokenTextThatShouldNotBeBrokenEvenIfTheContainerIsNarrow.
+    </div>
+</body>
+
+</html>

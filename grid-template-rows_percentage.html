@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Rows with <percentage></title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-rows: 20% 40% 40%; /* 每行相对于容器高度的百分比 */
+      gap: 10px;
+    }
+    .item {
+      background-color: lightblue;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+  </div>
+</body>
+</html>

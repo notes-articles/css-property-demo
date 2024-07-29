@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text-align-last</title>
+
+    <style>
+        body {
+            display: flex;
+            gap: 30px;
+        }
+
+        .container {
+            width: 160px;
+            border: 1px solid black;
+            margin-top: 30px;
+        }
+
+        .last-left {
+            /* 最后一行文字对齐方式 */
+            text-align-last: left;
+        }
+
+        .last-center {
+            text-align-last: center;
+        }
+
+        .last-right {
+            text-align-last: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container last-left">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, excepturi aliquid tenetur ipsam corporis quasi accusamus, ratione alias sed in atque! Consectetur similique mollitia harum tempore, expedita autem assumenda possimus.
+    </div>
+    <div class="container last-center">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, excepturi aliquid tenetur ipsam corporis quasi accusamus, ratione alias sed in atque! Consectetur similique mollitia harum tempore, expedita autem assumenda possimus.
+    </div>
+    <div class="container last-right">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, excepturi aliquid tenetur ipsam corporis quasi accusamus, ratione alias sed in atque! Consectetur similique mollitia harum tempore, expedita autem assumenda possimus.
+    </div>
+</body>
+</html>

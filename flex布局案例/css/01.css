@@ -1,0 +1,76 @@
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.wrapper>* {
+    padding: 10px;
+    margin: 10px;
+    /* flex: 1 100%; 表示以下内容：
+    flex-grow: 1;：指定了弹性项在剩余空间分配时所占据的比例，这里设置为 1，表示它将会占据剩余空间的比例为 1。
+    flex-shrink: 1;：指定了弹性项在空间不足时的缩小比例，这里默认为 1，表示它会按照默认的比例缩小。
+    flex-basis: 100%;：指定了弹性项在未占据空间时的基准大小，这里设置为 100%，表示它会占据父容器的全部可用空间。 */
+    flex: 1 100%;
+    border-radius: 10px;
+}
+
+.header {
+    background: tomato;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    background: lightgreen;
+    height: 80px;
+}
+
+.main {
+    text-align: left;
+    background: deepskyblue;
+    height: 300px;
+    font-size: 24px;
+}
+
+.aside1 {
+    background: gold;
+}
+
+.aside2 {
+    background: hotpink;
+}
+
+@media all and (min-width: 800px) {
+    .main {
+        /* flex: 3; 表示以下内容：
+        flex-grow: 3;：指定了弹性项在剩余空间分配时所占据的比例，这里设置为 3，表示它将会占据剩余空间的比例为 3。
+        flex-shrink: 1;：指定了弹性项在空间不足时的缩小比例，这里默认为 1，表示它会按照默认的比例缩小。
+        flex-basis: 0%;：指定了弹性项在未占据空间时的基准大小，这里设置为 0%，表示它会尽量占据剩余空间。 */
+        flex: 3;
+    }
+
+    .aside1 {
+        order: 1;
+    }
+
+    .aside2 {
+        order: 2;
+    }
+
+    .main {
+        order: 2;
+    }
+
+    .footer {
+        order: 4;
+    }
+}
+
+@media all and (min-width: 600px) {
+    .aside {
+        flex: 1;
+    }
+}

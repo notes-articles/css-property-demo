@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>grid-template-rows-linename</title>
+  <style>
+    .container {
+      display: grid;
+      /* Item 1 和 Item 3 指定线名 */
+      /* grid-template-rows: [row1-start] 100px [row1-end] 50px [row2-start] 200px [row2-end];  */
+
+      /* 每个行指定不同的线名 */
+      grid-template-rows: [row1-start] 100px [row1-end row2-start] 50px [row2-end row3-start] 200px [row3-end]; 
+
+      gap: 10px;
+    }
+    .item {
+      background-color: lightblue;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+  </div>
+</body>
+</html>

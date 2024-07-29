@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform-original</title>
+    <style>
+        .outer {
+            width: 100px;
+            aspect-ratio: 1/1;
+            border: 1px solid gray;
+            margin: 60px auto;
+        }
+
+        .inner {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            /* 通过关键词调整变换原点 */
+            transform-origin: right bottom;
+
+            /* 通过具体像素值调整变换原点 */
+            /* transform-origin: 50px 50px; */
+
+            /* 通过百分比调整变换原点 */
+            /* transform-origin: 25% 25%; */
+
+            /* 只给一个值 */
+            /* transform-origin:0; */
+
+            /* 变换原点位置的改变对 旋转 有影响 */
+            transform: rotateZ(30deg);
+
+            /* 变换原点位置的改变对 缩放 有影响 */
+            /* transform: scale(50%,50%); */
+
+            /* 变换原点位置的改变对 位移 没有影响 */
+            /* transform: translate(30px, 0); */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="inner">
+
+        </div>
+    </div>
+</body>
+
+</html>

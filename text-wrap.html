@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text-wrap</title>
+
+    <style>
+        .wrap {
+            /* 默认值
+            文本在适当的字符（例如空格，在使用空格分隔符的英语等语言中）处换行
+            */
+            text-wrap: wrap;
+        }
+
+        .nowrap {
+            /* 文本不会跨行换行 */
+            text-wrap: nowrap;
+        }
+
+        .balance {
+            /* 文本以最佳方式换行，以平衡每行的字符数量，提高布局质量和可读性。 */
+            text-wrap: balance;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 class="wrap" contenteditable="true">
+        The default behavior; the text in the heading wraps "normally"
+    </h2>
+
+    <h2 class="nowrap" contenteditable="true">
+        In this case the text in the heading doesn't wrap, and overflows the container
+    </h2>
+
+    <h2 class="balance" contenteditable="true">
+        In this case the text in the heading is nicely balanced across lines
+    </h2>
+
+</body>
+
+</html>

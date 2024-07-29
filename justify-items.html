@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justify-items</title>
+    <style>
+        .grid-container {
+            display: grid;
+            /* 定义三列 */
+            grid-template-columns: auto auto auto;
+            
+            /* 水平居中对齐 */
+            /* justify-items: center; */
+            
+            /* justify-items: start; */
+            /* justify-items: end; */
+            justify-items: stretch;
+
+            /* 设置间距 */
+            gap: 10px;
+            border: 1px solid black;
+        }
+
+        .grid-item {
+            background-color: #ddd;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- justify-items 属性是 CSS Grid 布局中用于设置网格容器中所有网格项（grid items）的水平对齐方式的属性。 -->
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+    </div>
+</body>
+
+</html>

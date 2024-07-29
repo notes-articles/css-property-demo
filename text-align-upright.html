@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text-align-upright</title>
+
+    <style>
+        p {
+            writing-mode: vertical-rl;
+
+            /* 默认值，数字不进行排版调整 */
+            /* text-combine-upright: none; */
+
+            /* 所有数字都将进行排版调整 */
+            text-combine-upright: all;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div>
+            <p><span>2022</span>年<span>12</span>月<span>8</span>日</p>
+
+            <!-- 数字需要使用标签包裹起来，和其他文字分割开，不然文字也重新排版了 -->
+            <!-- <p>2022年12月8日</p> -->
+        </div>
+    </section>
+</body>
+
+</html>

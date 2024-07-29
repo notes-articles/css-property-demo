@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>max-content</title>
+
+    <style>
+        #container {
+            width: 200px;
+            background-color: #8cffa0;
+            padding: 10px;
+        }
+
+        .item {
+            /* max-content表示内容的固有最大宽度或高度。
+            对于文本内容，这意味着即使导致溢出，内容也根本不会换行。 */
+            width: max-content;
+            background-color: #8ca0ff;
+            padding: 5px;
+            margin-bottom: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="item">Item</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam repellendus necessitatibus delectus eaque consequuntur? Molestias magni quae ea, repudiandae eius omnis iure expedita ipsum soluta consectetur autem itaque quaerat. Ipsa.</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1046 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 属性案例索引</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .search-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .search-container input {
+            width: 80%;
+            max-width: 600px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .list-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .list-item {
+            background: #f9f9f9;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.2s;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            position: relative;
+        }
+        .list-item:hover {
+            background-color: #e0f7fa;
+        }
+        .tooltip {
+            visibility: hidden;
+            width: auto;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            left: 10%;
+            top: 10%;
+            transform: translateY(-50%);
+            white-space: nowrap;
+        }
+        .list-item:hover .tooltip {
+            visibility: visible;
+        }
+        a {
+            text-decoration: none;
+            color: #00695c;
+            display: block;
+            width: 100%;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CSS 属性案例索引</h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="搜索页面...">
+        </div>
+        <div class="list-container" id="listContainer">
+
+            <div class="list-item">
+                <a href="accent-color.html" target="_blank">Accent Color</a>
+                <span class="tooltip">CSS Accent Color 属性用于设置一个元素的强调颜色。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="align-content.html" target="_blank">Align Content</a>
+                <span class="tooltip">CSS Align Content 属性用于在 Flexbox 或 Grid 布局中，定义多行内容的对齐方式。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="align-items.html" target="_blank">Align Items</a>
+                <span class="tooltip">CSS Align Items 属性用于在 Flexbox 布局中，定义单行内容的对齐方式。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="align-self.html" target="_blank">Align Self</a>
+                <span class="tooltip">CSS Align Self 属性用于在 Flexbox 布局中，定义单个项目的对齐方式。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="all.html" target="_blank">All</a>
+                <span class="tooltip">CSS All 属性用于重置元素的所有属性（除了方向属性）到初始或继承值。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="animation-direction_alternate-reverse.html" target="_blank">Animation Direction_Alternate Reverse</a>
+                <span class="tooltip">CSS Animation Direction 属性值alternate-Reverse用于设置动画的方向为 alternate-reverse。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="animation-direction_alternate.html" target="_blank">Animation Direction_Alternate</a>
+                <span class="tooltip">CSS Animation Direction 属性值alternate用于设置动画的方向为 alternate。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="animation-fill-mode.html" target="_blank">Animation Fill Mode</a>
+                <span class="tooltip">CSS Animation Fill Mode 属性定义动画在播放前后如何应用样式。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="animation.html" target="_blank">Animation</a>
+                <span class="tooltip">CSS Animation 属性用于设置动画效果。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="aspect-ratio.html" target="_blank">Aspect Ratio</a>
+                <span class="tooltip">CSS Aspect Ratio 属性用于设置元素的宽高比。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="backdrop-filter.html" target="_blank">Backdrop Filter</a>
+                <span class="tooltip">CSS Backdrop Filter 属性用于设置元素的背景滤镜效果。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="backface-visibility-a.html" target="_blank">Backface Visibility A</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="backface-visibility.html" target="_blank">Backface Visibility</a>
+                <span class="tooltip">CSS Backface Visibility 属性用于设置元素背面是否可见。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="background-attachement.html" target="_blank">Background Attachement</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="background-clip.html" target="_blank">Background Clip</a>
+                <span class="tooltip">CSS Background Clip 属性用于设置背景图像的绘制区域。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="background-image-linear-gradient.html" target="_blank">Background Image Linear Gradient</a>
+                <span class="tooltip">CSS linear-gradient 属性用于设置线性渐变背景图像。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="background-image-radial-gradient.html" target="_blank">Background Image Radial Gradient</a>
+                <span class="tooltip">CSS radial-gradient 属性用于设置径向渐变背景图像。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="background-image-repeat-gradient.html" target="_blank">Background Image Repeat Gradient</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="background-original.html" target="_blank">Background Original</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="background-repeat-round-burgerDemo.html" target="_blank">Background Repeat Round Burgerdemo</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="background-repeat.html" target="_blank">Background Repeat</a>
+                <span class="tooltip">CSS Background Repeat 属性用于设置背景图像的重复方式。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="block-size.html" target="_blank">Block Size</a>
+                <span class="tooltip">CSS Block Size 属性用于设置元素的块级大小。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="border-image-outset.html" target="_blank">Border Image Outset</a>
+                <span class="tooltip">CSS Border Image Outset 属性用于设置元素的边框图像的外延区域。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="border-image-repeat.html" target="_blank">Border Image Repeat</a>
+                <span class="tooltip">CSS Border Image Repeat 属性用于设置边框图像的平铺方式。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="border-image-slice.html" target="_blank">Border Image Slice</a>
+                <span class="tooltip">CSS Border Image Slice 属性用于设置边框图像的切片区域。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="border-image-width.html" target="_blank">Border Image Width</a>
+                <span class="tooltip">CSS Border Image Width 属性用于设置边框图像的宽度。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="border-image.html" target="_blank">Border Image</a>
+                <span class="tooltip">CSS Border Image 属性用于设置元素的边框图像。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="box-decoration-break.html" target="_blank">Box Decoration Break</a>
+                <span class="tooltip">CSS Box Decoration Break 属性用于设置元素的盒子装饰如何在分页或换行时呈现。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="box-shadow.html" target="_blank">Box Shadow</a>
+                <span class="tooltip">CSS Box Shadow 属性用于设置元素的阴影效果。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="box-sizing.html" target="_blank">Box Sizing</a>
+                <span class="tooltip">CSS Box Sizing 属性用于设置元素的盒子模型计算方式。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="break-after.html" target="_blank">Break After</a>
+                <span class="tooltip">CSS Break After 属性用于控制元素后的分页或换行行为。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="break-before.html" target="_blank">Break Before</a>
+                <span class="tooltip">CSS Break Before 属性用于控制元素前的分页或换行行为。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="caption-side.html" target="_blank">Caption Side</a>
+                <span class="tooltip">CSS Caption Side 属性用于设置表格标题的位置。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="caret-color.html" target="_blank">Caret Color</a>
+                <span class="tooltip">CSS Caret Color 属性用于设置文本输入光标的颜色。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="clip-path.html" target="_blank">Clip Path</a>
+                <span class="tooltip">CSS Clip Path 属性用于裁剪元素。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="color-schema.html" target="_blank">Color Schema</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="column-count.html" target="_blank">Column Count</a>
+                <span class="tooltip">CSS Column Count 属性用于设置多列布局的列数。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="column-fill.html" target="_blank">Column Fill</a>
+                <span class="tooltip">CSS Column Fill 属性用于设置列的填充方式。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="column-span.html" target="_blank">Column Span</a>
+                <span class="tooltip">CSS Column Span 属性用于设置元素跨越的列数。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="contain-layout.html" target="_blank">Contain Layout</a>
+                <span class="tooltip">CSS Contain Layout 属性用于设置元素的布局范围。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="contain-paint.html" target="_blank">Contain Paint</a>
+                <span class="tooltip">CSS Contain Paint 属性用于设置元素的绘制范围。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="contain-size.html" target="_blank">Contain Size</a>
+                <span class="tooltip">CSS Contain Size 属性用于设置元素的大小范围。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="contain-style.html" target="_blank">Contain Style</a>
+                <span class="tooltip">CSS Contain Style 属性用于设置元素的样式范围。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="contain-style2.html" target="_blank">Contain Style2</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="container-name.html" target="_blank">Container Name</a>
+                <span class="tooltip">CSS Container Name 属性用于设置容器的名称。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="container-tye.html" target="_blank">Container Tye</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="content-visibility-auto.html" target="_blank">Content Visibility Auto</a>
+                <span class="tooltip">CSS Content Visibility Auto 属性用于设置内容的可见性为自动。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="content-visibility-hidden.html" target="_blank">Content Visibility Hidden</a>
+                <span class="tooltip">CSS Content Visibility Hidden 属性用于设置内容的可见性为隐藏。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="counter-set.html" target="_blank">Counter Set</a>
+                <span class="tooltip">CSS Counter Set 属性用于设置计数器。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="counter.html" target="_blank">Counter</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="cursor.html" target="_blank">Cursor</a>
+                <span class="tooltip">CSS Cursor 属性用于设置鼠标指针的样式。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="directioin.html" target="_blank">Directioin</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="empty-cell.html" target="_blank">Empty Cell</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="filter.html" target="_blank">Filter</a>
+                <span class="tooltip">CSS Filter 属性用于设置元素的滤镜效果。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="flex-direction.html" target="_blank">Flex Direction</a>
+                <span class="tooltip">CSS Flex Direction 属性用于设置Flex容器中子元素的排列方向。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="flex-flow.html" target="_blank">Flex Flow</a>
+                <span class="tooltip">CSS Flex Flow 属性用于设置Flex容器的子元素排列方向和换行方式。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="flex-grow.html" target="_blank">Flex Grow</a>
+                <span class="tooltip">CSS Flex Grow 属性用于设置Flex容器中子元素的放大比例。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="flex-shrink.html" target="_blank">Flex Shrink</a>
+                <span class="tooltip">CSS Flex Shrink 属性用于设置Flex容器中子元素的缩小比例。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="flex-wrap.html" target="_blank">Flex Wrap</a>
+                <span class="tooltip">CSS Flex Wrap 属性用于设置Flex容器的子元素是否换行。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="flex.html" target="_blank">Flex</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="float.html" target="_blank">Float</a>
+                <span class="tooltip">CSS Float 属性用于设置元素的浮动方式。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="font-variant.html" target="_blank">Font Variant</a>
+                <span class="tooltip">CSS Font Variant 属性用于设置字体的不同变体。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="grid-area.html" target="_blank">Grid Area</a>
+                <span class="tooltip">CSS Grid Area 属性用于设置Grid布局中区域的位置。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="grid-auto-columns.html" target="_blank">Grid Auto Columns</a>
+                <span class="tooltip">CSS Grid Auto Columns 属性用于设置Grid布局的自动生成列的宽度。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="grid-auto-flow.html" target="_blank">Grid Auto Flow</a>
+                <span class="tooltip">CSS Grid Auto Flow 属性用于设置Grid布局自动放置项目的顺序。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="grid-auto-rows.html" target="_blank">Grid Auto Rows</a>
+                <span class="tooltip">CSS Grid Auto Rows 属性用于设置Grid布局的自动生成行的高度。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="grid-column-end.html" target="_blank">Grid Column End</a>
+                <span class="tooltip">CSS Grid Column End 属性用于设置Grid布局中列的结束位置。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="grid-column-start.html" target="_blank">Grid Column Start</a>
+                <span class="tooltip">CSS Grid Column Start 属性用于设置Grid布局中列的开始位置。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="grid-column.html" target="_blank">Grid Column</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="grid-row-end.html" target="_blank">Grid Row End</a>
+                <span class="tooltip">CSS Grid Row End 属性用于设置Grid布局中行的结束位置。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="grid-row-start.html" target="_blank">Grid Row Start</a>
+                <span class="tooltip">CSS Grid Row Start 属性用于设置Grid布局中行的开始位置。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="grid-row.html" target="_blank">Grid Row</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="grid-template-areas.html" target="_blank">Grid Template Areas</a>
+                <span class="tooltip">CSS Grid Template Areas 属性用于设置Grid布局的区域模板。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="grid-template-columns_fit-content.html" target="_blank">Grid Template Columns_Fit Content</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="grid-template-columns_masonry.html" target="_blank">Grid Template Columns_Masonry</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="grid-template-columns_max-content.html" target="_blank">Grid Template Columns_Max Content</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="grid-template-columns_min-content.html" target="_blank">Grid Template Columns_Min Content</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="grid-template-columns_minmax.html" target="_blank">Grid Template Columns_Minmax</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="grid-template-columns_none.html" target="_blank">Grid Template Columns_None</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="grid-template-columns_repeat-auto-fill.html" target="_blank">Grid Template Columns_Repeat Auto Fill</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="grid-template-columns_repeat-auto-fit.html" target="_blank">Grid Template Columns_Repeat Auto Fit</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="grid-template-columns_repeat-auto.html" target="_blank">Grid Template Columns_Repeat Auto</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="grid-template-columns_repeat-flex.html" target="_blank">Grid Template Columns_Repeat Flex</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="grid-template-columns_repeat-length.html" target="_blank">Grid Template Columns_Repeat Length</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="grid-template-columns_repeat-line-names.html" target="_blank">Grid Template Columns_Repeat Line Names</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="grid-template-columns_repeat-max-content.html" target="_blank">Grid Template Columns_Repeat Max Content</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="grid-template-columns_repeat-min-content.html" target="_blank">Grid Template Columns_Repeat Min Content</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="grid-template-columns_repeat-minmax.html" target="_blank">Grid Template Columns_Repeat Minmax</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="grid-template-columns_repeat-percentage.html" target="_blank">Grid Template Columns_Repeat Percentage</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="grid-template-columns_subgrid.html" target="_blank">Grid Template Columns_Subgrid</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="grid-template-rows_auto.html" target="_blank">Grid Template Rows_Auto</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="grid-template-rows_fit-content.html" target="_blank">Grid Template Rows_Fit Content</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="grid-template-rows_flex.html" target="_blank">Grid Template Rows_Flex</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="grid-template-rows_length.html" target="_blank">Grid Template Rows_Length</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="grid-template-rows_linename.html" target="_blank">Grid Template Rows_Linename</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="grid-template-rows_masonry.html" target="_blank">Grid Template Rows_Masonry</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="grid-template-rows_max-content.html" target="_blank">Grid Template Rows_Max Content</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="grid-template-rows_min-content.html" target="_blank">Grid Template Rows_Min Content</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="grid-template-rows_minmax.html" target="_blank">Grid Template Rows_Minmax</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="grid-template-rows_none.html" target="_blank">Grid Template Rows_None</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="grid-template-rows_percentage.html" target="_blank">Grid Template Rows_Percentage</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="grid-template-rows_repeat.html" target="_blank">Grid Template Rows_Repeat</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="grid-template-rows_subgrid.html" target="_blank">Grid Template Rows_Subgrid</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="grid.html" target="_blank">Grid</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="hyphenate-charater.html" target="_blank">Hyphenate Charater</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="hyphenate-limit-chars.html" target="_blank">Hyphenate Limit Chars</a>
+                <span class="tooltip">CSS Hyphenate Limit Chars 属性用于设置连字符的限制字符数。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="hyphens.html" target="_blank">Hyphens</a>
+                <span class="tooltip">CSS Hyphens 属性用于设置如何处理连字符。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="image-orientation.html" target="_blank">Image Orientation</a>
+                <span class="tooltip">CSS Image Orientation 属性用于设置图像的方向。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="index.html" target="_blank">Index</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="inset.html" target="_blank">Inset</a>
+                <span class="tooltip">CSS Inset 属性用于设置元素的插入值。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="isolation.html" target="_blank">Isolation</a>
+                <span class="tooltip">CSS Isolation 属性用于设置元素的隔离模式。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="justify-content.html" target="_blank">Justify Content</a>
+                <span class="tooltip">CSS Justify Content 属性用于设置Flex容器中子元素的对齐方式。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="justify-items.html" target="_blank">Justify Items</a>
+                <span class="tooltip">CSS Justify Items 属性用于设置Grid容器中子元素的对齐方式。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="justify-self.html" target="_blank">Justify Self</a>
+                <span class="tooltip">CSS Justify Self 属性用于设置Grid容器中单个子元素的对齐方式。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="letter-spacing.html" target="_blank">Letter Spacing</a>
+                <span class="tooltip">CSS Letter Spacing 属性用于设置字符间距。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="line-break.html" target="_blank">Line Break</a>
+                <span class="tooltip">CSS Line Break 属性用于设置如何断行。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="masonry-layout_multicol.html" target="_blank">Masonry Layout_Multicol</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="max-content.html" target="_blank">Max Content</a>
+                <span class="tooltip">CSS Max Content 属性用于设置元素的最大内容尺寸。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="min-content.html" target="_blank">Min Content</a>
+                <span class="tooltip">CSS Min Content 属性用于设置元素的最小内容尺寸。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="mix-blend-mode.html" target="_blank">Mix Blend Mode</a>
+                <span class="tooltip">CSS Mix Blend Mode 属性用于设置元素的混合模式。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="object-fit.html" target="_blank">Object Fit</a>
+                <span class="tooltip">CSS Object Fit 属性用于设置元素内容的适应方式。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="object-position.html" target="_blank">Object Position</a>
+                <span class="tooltip">CSS Object Position 属性用于设置元素内容的位置。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="order.html" target="_blank">Order</a>
+                <span class="tooltip">CSS Order 属性用于设置Flex容器中子元素的排列顺序。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="outline.html" target="_blank">Outline</a>
+                <span class="tooltip">CSS Outline 属性用于设置元素的轮廓线。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="overflow-clip-margin.html" target="_blank">Overflow Clip Margin</a>
+                <span class="tooltip">CSS Overflow Clip Margin 属性用于设置溢出裁剪区域的边距。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="overflow-wrap.html" target="_blank">Overflow Wrap</a>
+                <span class="tooltip">CSS Overflow Wrap 属性用于设置如何处理溢出内容。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="palce-content.html" target="_blank">Palce Content</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="place-items.html" target="_blank">Place Items</a>
+                <span class="tooltip">CSS Place Items 属性用于设置Grid容器中子元素的对齐方式。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="place-self.html" target="_blank">Place Self</a>
+                <span class="tooltip">CSS Place Self 属性用于设置Grid容器中单个子元素的对齐方式。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="pointer-event.html" target="_blank">Pointer Event</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="position-absolute.html" target="_blank">Position Absolute</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="position-fixed.html" target="_blank">Position Fixed</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="position-relative.html" target="_blank">Position Relative</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="position-sticky.html" target="_blank">Position Sticky</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="quotes.html" target="_blank">Quotes</a>
+                <span class="tooltip">CSS Quotes 属性用于设置引号样式。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="resize.html" target="_blank">Resize</a>
+                <span class="tooltip">CSS Resize 属性用于设置元素的可调整大小区域。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="ruby-position.html" target="_blank">Ruby Position</a>
+                <span class="tooltip">CSS Ruby Position 属性用于设置Ruby注释的位置。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="scroll-behavior.html" target="_blank">Scroll Behavior</a>
+                <span class="tooltip">CSS Scroll Behavior 属性用于设置滚动行为。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="scroll-margin.html" target="_blank">Scroll Margin</a>
+                <span class="tooltip">CSS Scroll Margin 属性用于设置滚动边距。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="scroll-padding.html" target="_blank">Scroll Padding</a>
+                <span class="tooltip">CSS Scroll Padding 属性用于设置滚动填充。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="scroll-snap-type.html" target="_blank">Scroll Snap Type</a>
+                <span class="tooltip">CSS Scroll Snap Type 属性用于设置滚动捕捉类型。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="scrollbar.html" target="_blank">Scrollbar</a>
+                <span class="tooltip">CSS Scrollbar 属性用于设置滚动条样式。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="scrollbar_betterDemo.html" target="_blank">Scrollbar_Betterdemo</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="subgrid_gap-property.html" target="_blank">Subgrid_Gap Property</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="subgrid_in_both_dimensions.html" target="_blank">Subgrid_In_Both_Dimensions</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="subgrid_named-lines.html" target="_blank">Subgrid_Named Lines</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="subgrid_no_implicit_grid_in_dimensions.html" target="_blank">Subgrid_No_Implicit_Grid_In_Dimensions</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="text-align-last.html" target="_blank">Text Align Last</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="text-align-upright.html" target="_blank">Text Align Upright</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="text-align.html" target="_blank">Text Align</a>
+                <span class="tooltip">CSS Text Align 属性用于设置文本的对齐方式。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="text-decoration-thickness.html" target="_blank">Text Decoration Thickness</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="text-decoration.html" target="_blank">Text Decoration</a>
+                <span class="tooltip">CSS Text Decoration 属性用于设置文本的装饰效果。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="text-emphasis-position.html" target="_blank">Text Emphasis Position</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="text-emphasis.html" target="_blank">Text Emphasis</a>
+                <span class="tooltip">CSS Text Emphasis 属性用于设置文本的重点符号。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="text-indent.html" target="_blank">Text Indent</a>
+                <span class="tooltip">CSS Text Indent 属性用于设置文本的缩进。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="text-overflow.html" target="_blank">Text Overflow</a>
+                <span class="tooltip">CSS Text Overflow 属性用于设置文本的溢出处理方式。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="text-shadow.html" target="_blank">Text Shadow</a>
+                <span class="tooltip">CSS Text Shadow 属性用于设置文本的阴影效果。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="text-transform.html" target="_blank">Text Transform</a>
+                <span class="tooltip">CSS Text Transform 属性用于设置文本的大小写转换。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="text-underline-offset.html" target="_blank">Text Underline Offset</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="text-underline-position.html" target="_blank">Text Underline Position</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="text-wrap.html" target="_blank">Text Wrap</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="transform-multiple-function-values.html" target="_blank">Transform Multiple Function Values</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="transform-original.html" target="_blank">Transform Original</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="transform-rotate3d.html" target="_blank">Transform Rotate3D</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="transform-rotateZ.html" target="_blank">Transform Rotatez</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="transform-scale.html" target="_blank">Transform Scale</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="transform-scaleZ.html" target="_blank">Transform Scalez</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="transform-skew.html" target="_blank">Transform Skew</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="transform-translate.html" target="_blank">Transform Translate</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="transform-translateZ.html" target="_blank">Transform Translatez</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="transition-bike-demo.html" target="_blank">Transition Bike Demo</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="transition-timing-functioin.html" target="_blank">Transition Timing Functioin</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="transition.html" target="_blank">Transition</a>
+                <span class="tooltip">CSS Transition 属性用于设置元素的过渡效果。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="user-select.html" target="_blank">User Select</a>
+                <span class="tooltip">CSS User Select 属性用于设置用户是否可以选择文本。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="white-space.html" target="_blank">White Space</a>
+                <span class="tooltip">CSS White Space 属性用于设置元素的空白处理方式。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="will-change.html" target="_blank">Will Change</a>
+                <span class="tooltip">CSS Will Change 属性用于设置元素将要发生的变化。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="word-break.html" target="_blank">Word Break</a>
+                <span class="tooltip">CSS Word Break 属性用于设置单词的断行方式。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="word-spacing.html" target="_blank">Word Spacing</a>
+                <span class="tooltip">CSS Word Spacing 属性用于设置单词间距。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="writing-mode.html" target="_blank">Writing Mode</a>
+                <span class="tooltip">CSS Writing Mode 属性用于设置文本的书写模式。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="z-index.html" target="_blank">Z Index</a>
+                <span class="tooltip">CSS Z Index 属性用于设置元素的堆叠顺序。</span>
+            </div>
+
+            <div class="list-item">
+                <a href="Z-test.html" target="_blank">Z Test</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="animation案例/animation-caret.html" target="_blank">Animation Caret</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="animation案例/animation-typewriter.html" target="_blank">Animation Typewriter</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="flex布局案例/01_Responsive Flexbox Layout Page.html" target="_blank">01_Responsive Flexbox Layout Page</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="flex布局案例/02_Responsive Header With Flexbox.html" target="_blank">02_Responsive Header With Flexbox</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+            <div class="list-item">
+                <a href="flex布局案例/03_Flex Expanding Pannels.html" target="_blank">03_Flex Expanding Pannels</a>
+                <span class="tooltip">暂无描述</span>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        function searchFunction() {
+            var input, filter, listContainer, listItems, i, txtValue;
+            input = document.getElementById("searchInput");
+            filter = input.value.toUpperCase();
+            listContainer = document.getElementById("listContainer");
+            listItems = listContainer.getElementsByClassName("list-item");
+            for (i = 0; i < listItems.length; i++) {
+                txtValue = listItems[i].textContent || listItems[i].innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    listItems[i].style.display = "";
+                } else {
+                    listItems[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>

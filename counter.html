@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter</title>
+
+    <style>
+        div {
+            counter-reset: sevens 100;
+        }
+
+        i {
+            counter-increment: sevens -7;
+        }
+
+        i:first-of-type {
+            counter-increment: none;
+        }
+
+        i::before {
+            content: counter(sevens);
+        }
+    </style>
+</head>
+
+<body>
+    <div style="display: flex; gap: 10px; flex-direction: column;">
+        <i></i><i></i><i></i><i></i><i></i><i></i><i></i> <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+    </div>
+</body>
+
+</html>

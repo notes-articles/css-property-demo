@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.square {
+    width: 200px;
+    aspect-ratio: auto 1/1;
+}
+
+div {
+    background-image: linear-gradient(90deg, #ec4899, #ef4444, #f59e0b);
+}

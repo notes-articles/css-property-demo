@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation-fill-mode_none</title>
+
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            /* animation-fill-mode 是一个用于控制动画在播放前和播放后如何应用样式的 CSS 属性。
+            none：默认值。动画不会影响任何非动画阶段的样式。在动画播放之前和之后，元素将保持其初始状态。
+            forwards：在动画结束后，元素将保持动画的最后一个关键帧（或关键帧列表中的最后一个）。换句话说，动画结束后，元素将应用最后一个关键帧的样式。
+            backwards：在动画播放之前，元素将应用第一个关键帧的样式。换句话说，在动画播放之前，元素将应用第一个关键帧的样式，直到动画开始。
+            both：forwards 和 backwards 的组合。在动画播放之前，元素将应用第一个关键帧的样式，并在动画结束后保持最后一个关键帧的样式。
+            */
+            animation: move 2s linear infinite alternate forwards;
+        }
+
+        @keyframes move {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                background-color: aqua;
+                transform: translateX(200px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

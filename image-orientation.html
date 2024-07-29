@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>image-orientation</title>
+  <style>
+    #image {
+        /* 这个属性通常用于解决在移动设备上拍摄的照片在网页上显示时可能出现的方向不正确的问题 */
+      image-orientation: from-image;
+    }
+
+    img {
+      margin: 0.5rem 0;
+    }
+
+    label {
+      font-family: monospace;
+    }
+  </style>
+</head>
+
+<body>
+  <img id="image" src="./images/oriole.jpg" alt="Orientation taken from the image" />
+
+  <div>
+    <input type="radio" id="from-image" name="orientation" value="from-image" checked />
+    <label for="from-image">from-image</label>
+  </div>
+
+  <div>
+    <input type="radio" id="none" name="orientation" value="none" />
+    <label for="none">none</label>
+  </div>
+
+  <script>
+    document.addEventListener("change", (evt) => {
+      document.getElementById("image").style.imageOrientation = evt.target.value;
+    });
+  </script>
+</body>
+
+</html>

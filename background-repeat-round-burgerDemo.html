@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-repeat-round-burgerDemo</title>
+    <style>
+        body {
+            height: calc(100vh - 40px);
+            margin: 20px;
+            background: #f2f2f2;
+        }
+
+        .burger {
+            width: 200px;
+            height: 100%;
+            margin: 10px auto;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .bun {
+            width: 180px;
+            height: 80px;
+            border-radius: 100px 100px 0 0;
+            background-color: #f4a864;
+        }
+
+        .sesame-seed {
+            position: absolute;
+            background: #ffe3ca;
+            height: 8px;
+            width: 20px;
+            border-radius: 100%;
+        }
+
+        .one {
+            transform: rotate(-10deg);
+            top: 10px;
+            left: 30%
+        }
+
+        .two {
+            transform: rotate(8deg);
+            left: 45%;
+            top: 20px;
+        }
+
+        .three {
+            transform: rotate(4deg);
+            left: 60%;
+            top: 10px;
+        }
+
+        .cosmic-fill {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            background: url('./images/fill-01_vgkaj7.svg');
+            background-repeat: round;
+        }
+
+        .bun.bottom {
+            border-radius: 0 0 100px 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="burger">
+        <div class="bun top">
+            <div class="sesame-seed one"></div>
+            <div class="sesame-seed two"></div>
+            <div class="sesame-seed three"></div>
+        </div>
+        <div class="cosmic-fill"></div>
+        <div class="bun bottom"></div>
+    </div>
+</body>
+
+</html>

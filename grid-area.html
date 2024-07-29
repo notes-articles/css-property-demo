@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>grid-area</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-rows: 100px 100px;
+      grid-template-columns: 100px 100px;
+      grid-gap: 10px;
+    }
+
+    .item {
+      background-color: #ccc;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .item-2 {
+        /* 
+        This property is a shorthand for the following CSS properties:
+            grid-row-start
+            grid-column-start
+            grid-row-end
+            grid-column-end
+        */
+      grid-area: 1 / 2 / 2 / 3; /* 起始行1，起始列2，结束行2，结束列3 */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">Item 1</div>
+    <div class="item item-2">Item 2</div>
+    <div class="item">Item 3</div>
+    <div class="item">Item 4</div>
+  </div>
+</body>
+</html>

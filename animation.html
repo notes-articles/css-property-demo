@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .outer {
+            width: 1300px;
+            aspect-ratio: 10/1;
+            border: 1px solid gray;
+            margin: 10px auto;
+        }
+
+        /* 定义一个动画（定义一组关键帧） 第一种方式*/
+        @keyframes rightMove {
+
+            /* 第一帧 */
+            from {}
+
+            /* 最后一帧 */
+            to {
+                transform: translateX(1200px);
+                background-color: aqua;
+            }
+        }
+
+        /* 定义一个动画（定义一组关键帧） 第二种方式*/
+        @keyframes rightMove2 {
+
+            /* 第一帧 */
+            0% {}
+
+            /* 最后一帧 */
+            100% {
+                transform: translateX(1200px) rotate(30deg);
+                background-color: blue;
+            }
+        }
+
+        .inner {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            /* 应用动画到元素 */
+            /* animation-name: rightMove; */
+            animation-name: rightMove2;
+            /* 动画持续时间 */
+            animation-duration: 5s;
+            /* 动画延迟时间 */
+            animation-delay: 3s;
+            /* 动画的方式 */
+            animation-timing-function: linear;
+            /* 动画的播放次数 */
+            /* animation-iteration-count: infinite; */
+            animation-iteration-count:3;
+            /* 动画的方向 */
+            animation-direction: alternate;
+            /* 不发生动画的时候在哪里 */
+            animation-fill-mode: forwards;
+        }
+
+        .outer:hover .inner {
+            /* 设置动画状态 */
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+</body>
+
+</html>

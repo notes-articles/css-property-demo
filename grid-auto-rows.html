@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>grid-auto-rows</title>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-auto-rows: 100px; /* 固定大小的行 */
+      grid-gap: 10px;
+    }
+
+    .dynamic-container {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-auto-rows: min-content; /* 行高度根据内容最小高度自动调整 */
+      grid-gap: 10px;
+    }
+
+    .fit-container {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-auto-rows: fit-content(50%); /* 行高度自适应内容，但不超过50% */
+      grid-gap: 10px;
+    }
+
+    .item {
+      background-color: lightblue;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h2>Fixed Auto Rows</h2>
+  <div class="grid-container">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+    <div class="item">Item 4</div>
+    <div class="item">Item 5</div>
+    <div class="item">Item 6</div>
+  </div>
+
+  <h2>Dynamic Auto Rows</h2>
+  <div class="dynamic-container">
+    <div class="item">Short Content</div>
+    <div class="item">Long Content Long Content Long Content</div>
+    <div class="item">Short Content</div>
+    <div class="item">Long Content Long Content Long Content</div>
+    <div class="item">Short Content</div>
+    <div class="item">Long Content Long Content Long Content</div>
+  </div>
+
+  <h2>Fit Content Auto Rows</h2>
+  <div class="fit-container">
+    <div class="item">Short Content</div>
+    <div class="item">Long Content Long Content Long Content</div>
+    <div class="item">Short Content</div>
+    <div class="item">Long Content Long Content Long Content</div>
+    <div class="item">Short Content</div>
+    <div class="item">Long Content Long Content Long Content</div>
+  </div>
+</body>
+</html>

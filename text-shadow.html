@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text-shadow</title>
+
+    <style>
+        .red-text-shadow {
+            /* offset-x | offset-y | blur-radius | color */
+            text-shadow: 1px 1px 2px black;
+        }
+
+        .white-text-with-blue-shadow {
+            text-shadow:
+                1px 1px 2px black,
+                0 0 1em blue,
+                0 0 0.2em blue;
+            color: white;
+            font:
+                1.5em Georgia,
+                serif;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="red-text-shadow">
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+        doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
+    </p>
+
+    <p class="white-text-with-blue-shadow">
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+        doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
+    </p>
+</body>
+
+</html>

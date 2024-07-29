@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>backface-visibility</title>
+    <style>
+        .flip {
+            transform: rotateY(180deg);
+            /* 默认值 */
+            backface-visibility: visible;
+        }
+
+        .flip.hide-back {
+            backface-visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="flip">text</div>
+
+    <!-- No See -->
+    <div class="flip hide-back">text</div>
+</body>
+</html>

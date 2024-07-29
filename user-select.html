@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user-select</title>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        span {
+            height: 30px;
+            padding: 20px;
+            color: lightcoral;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            background-color: aqua;
+            border: 1px solid black;
+        }
+
+        /* 用于控制用户是否可以选择文本 */
+        
+        .select-auto {
+            user-select: auto;
+        }
+
+        .select-none {
+            user-select: none;
+        }
+
+        .select-all {
+            user-select: all;
+        }
+
+        .select-text {
+            user-select: text;
+        }
+    </style>
+</head>
+<body>
+    <span class="select-auto">Lorem ipsum dolor sit amet.</span>
+    <span class="select-none">Lorem ipsum dolor sit amet.</span>
+    <span class="select-all">Lorem ipsum dolor sit amet.</span>
+    <span class="select-text">Lorem ipsum dolor sit amet.</span>
+</body>
+</html>

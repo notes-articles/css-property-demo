@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .grid-container {
+            display: grid;
+            width: 300px;
+            height: 200px;
+            border: 2px solid #333;
+            /* 在网格容器内同时设置所有网格项目的对齐方式为居中 */
+            place-items: center;
+        }
+
+        .grid-item {
+            background-color: lightblue;
+            width: 50px;
+            height: 50px;
+            border: 1px solid #666;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>writing-mode</title>
+
+    <style>
+        .container {
+            border: 2px solid red;
+            padding: .75em;
+            width: 80%;
+            max-height: 300px;
+            margin-top: 30px;
+            display: flex
+        }
+
+        .container>div {
+            background-color: rgba(0, 0, 255, .2);
+            border: 3px solid #00f;
+            margin: 10px;
+            /* 等分布局 */
+            flex: 1
+        }
+
+        .horizontal-tb {
+            writing-mode: horizontal-tb;
+        }
+
+        .vertical-lr {
+            writing-mode: vertical-lr;
+        }
+
+        .vertical-rl {
+            writing-mode: vertical-rl;
+        }
+
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="container horizontal-tb">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+
+        <div class="container vertical-lr">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+
+        <div class="container vertical-rl">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+.container {
+    font-family: sans-serif;
+    /* inherited */
+    font-size: 1.5rem;
+    /* inherited */
+    text-align: center;
+    /* inherited */
+    text-transform: uppercase;
+    /* inherited */
+    text-shadow: 1px 1px 1px rgb(230, 17, 17);
+}
+
+.parent {
+    color: white;
+    /* inherited */
+    background-color: yellow;
+    /* not inherited */
+    width: 80%;
+    /* not inherited */
+    padding: 1em;
+    /* not inherited */
+
+    border: 5px solid #E18728;
+    /* not inherited */
+}
+
+button {
+    margin-bottom: 10px;
+}

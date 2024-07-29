@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>backdrop-filter</title>
+    <style>
+        .container {
+            background-image: url('./images/background-filter.jpg');
+            background-size: cover;
+            height: 100vh;
+            border: 1px solid gray;
+            width: 100%;
+        }
+
+        .boxes {
+            display: flex;
+            align-items: center;
+            overflow: scroll;
+            min-height: 90vh;
+
+            p {
+                font-weight: 600;
+                min-width: 200px;
+                color: white;
+                font-size: 40px;
+            }
+        }
+
+        .box {
+            border: 1px solid rgba(255, 255, 255, .7);
+            min-width: 400px;
+            min-height: 95vh;
+            /* line-height:1 即 line-height:95vh */
+            line-height: 1;
+
+            h1 {
+                font-weight: 400;
+                font-size: 18px;
+            }
+        }
+
+        .none {
+            backdrop-filter: none;
+        }
+
+        .grayscale {
+            backdrop-filter: grayscale(1);
+        }
+
+        .brightness {
+            backdrop-filter: brightness(1.5);
+        }
+
+        .blur {
+            backdrop-filter: blur(5px);
+        }
+
+        .contrast {
+            backdrop-filter: contrast(.8);
+        }
+
+        .drop-shadow {
+            backdrop-filter: drop-shadow(4px 4px 10px blue);
+        }
+
+        .invert {
+            backdrop-filter: invert(.7);
+        }
+
+        .opacity {
+            backdrop-filter: opacity(.4);
+        }
+
+        .sepia {
+            backdrop-filter: sepia(.4);
+        }
+
+        .saturate {
+            backdrop-filter: saturate(1.8);
+        }
+
+        .hue-rotate {
+            backdrop-filter: hue-rotate(120deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="boxes">
+            <p>Scroll -></p>
+            <div class="box none">
+                <h1>background-filter: none</h1>
+            </div>
+            <div class="box grayscale">
+                <h1>background-filter: grayscale(1)</h1>
+            </div>
+            <div class="box brightness">
+                <h1>background-filter: brightness(1.5)</h1>
+            </div>
+            <div class="box blur">
+                <h1>background-filter: blur(5px)</h1>
+            </div>
+            <div class="box contrast">
+                <h1>background-filter: contrast(.8)</h1>
+            </div>
+            <div class="box invert">
+                <h1>background-filter: invert(.7)</h1>
+            </div>
+            <div class="box opacity">
+                <h1>background-filter: opacity(.5)</h1>
+            </div>
+            <div class="box sepia">
+                <h1>background-filter: sepia(.5)</h1>
+            </div>
+            <div class="box saturate">
+                <h1>background-filter: saturate(1.8)</h1>
+            </div>
+            <div class="box hue-rotate">
+                <h1>background-filter: hue-rotate(120deg)</h1>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
